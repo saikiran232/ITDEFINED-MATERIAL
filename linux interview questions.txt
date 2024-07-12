@@ -1,0 +1,108 @@
+What is Linux? what is features of linux
+What is the History of Linux?
+What is the difference between Linux and Unix?
+What is the Linux Kernel?
+What is BASH?
+What is LILO?
+What are the Features of the Linux Operating System?
+What is the latest version of Linux?
+What is the advantage of Open Source?
+What is the disadvantage of Open Source?
+What is Shell?
+How many types of Shells are there in Linux?
+What are the basic components of Linux?
+How do you open a command prompt when issuing a command?
+What is a swap space?
+What is the GUI?
+Explain File Permissions types in Linux?
+What are the environmental variables?
+What are the symbolic links?
+What are the hard links?
+What is redirection?
+What are Daemons?
+How to become a superuser in Linux?
+Describe the root account?
+Explain the virtual desktop?
+What are the different modes when using the vi editor?
+What are inode and process id?
+What are the Process states in Linux?
+Explain Process Management System Calls in Linux?
+Explain File Permission groups in Linux?
+What Is a File system in Linux?
+Explain different file system types in Linux?
+Why LVM is required?
+Use of the screen command?
+What is umask?
+How to set the mask permanently for a user?
+What is network bonding in Linux?
+What are the different modes of Network bonding in Linux
+How to check the default route and routing table?
+How to check which ports are listening in my Linux Server?
+Where the kernel modules are located?
+Explain the distinctions between the init and systemd initialization systems. When would you use each one?
+What is the role of a Linux firewall and how to configure it?
+How to change the default run level in Linux?
+How to share a directory using NFS?
+What are the default ports used for SMTP, DNS, FTP, DHCP, SSH, and squid?
+How to lock a user account in Linux?
+What is the 'ls' command and what it does?
+What is grep command in Linux?
+What is ps command in Linux?
+What is the env command in Linux?
+What is the top Command in Linux?
+What is netstat command in Linux?
+What is lsof command in Linux?
+Explain about chmod command?
+Explain about chown command?
+What is the cp command in Linux?
+How to remove a file or directory from the system in Linux?
+What is mkdir in Linux?
+Explain rmdir command in Linux?
+How to exit from vi editors?
+How to delete information from a file in vi?
+Enlist some Linux to file content commands?
+Tell the types of Linux distributions and name some popular distributions.
+Why we use LINUX?
+What are the features of the Linux operating system?
+Differentiate between BASH and DOS?
+What is meant by internal commands and external commands?
+What is meant by PIPE in Linux?
+Describe how a parent and child process communicates with each other?
+What is a Stateless Linux Server?
+Explain the features of Stateless Linux Server?
+What is Zombie Process?
+Explain the work of the Ctrl+Alt+Del key combination on the Linux operating system?
+Why is Linux considered more secure than other operating systems?
+What is the tail command in Linux?
+What is the cat command in Linux?
+What is the grep command in Linux?
+What is ps command in Linux?
+What is the env command in Linux?
+What is the top Command in Linux?
+What is the netstat command in Linux?
+What is the lsof command in Linux?
+What is the df command in Linux?
+What is a du command in Linux?
+What is the iptables command in Linux?
+What is the difference between Linux and Windows
+What does the cd - command do?
+What does cd command do?
+What does (cd dir && command) do?
+What does pushd command do?
+What is ls -lSr command?
+What is du -s * | sort -k1,1rn | head command used for?
+What does this du -hs /home/* | sort -k1,1h command do?
+What is df -h command?
+What is df -T command?
+What is fdisk -l command used for?
+How do you kill the program using one port in Linux?
+How do you limit memory usage for commands?
+How do you get the full path of a file in Linux?
+How do you list the contents of tar.gz and extract only one file?
+How do you find who is logged in?
+How do you check the permissions of each directory to a file?
+How do you run the command every time a file is modified?
+How to copy text to the clipboard?
+How do you check resources usage?
+How do you run a command for a limited time?
+How do you combine two lines from two sorted files in Linux?

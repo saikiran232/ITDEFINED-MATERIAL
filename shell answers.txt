@@ -1,0 +1,441 @@
+1. 
+Interactive Shell
+
+/bin/bash and /bin/sh 
+Non-interactive shell
+
+/sbin/nologin 
+2. 
+Absolute path is the full path of the directory. It always starts with “/” .
+
+Example:
+
+cd  /var/tmp/abrt/
+Relative path is necessary from current location to reach particular directory doesn’t start with “/”.
+
+Example:
+
+cd .. ,   cd –
+3. 
+The touch command is used for creating files.
+Example:
+
+#touch filename 
+The cat command is used for reading files.
+Example:
+
+#cat filename
+The rm command is used  for delete a file.
+Example:
+
+#rm –f  filename 
+4. 
+The mkdir command is used for creating a directory. 
+Example:
+
+# mkdir filename
+The rmdir command is used for remove directory 
+Example:
+
+#rmdir filename 
+5. 
+To create multiple text file touch file name {} command is used. 
+
+Example:
+
+Suppose we want create 4 files then we type:
+
+#touch filename{1..4}
+To create multiple directory mkdir filename {} command is used.
+
+Example:
+
+Suppose we want to create 4 directory, then we type:
+
+mkdir filename {1..4}
+6. 
+Head command is used for display started 10 lines
+
+Tail command is used for display started 10 lines
+
+7. 
+$echo $SHELL command is used for find current shell.
+
+8. 
+Cat /etc/shells command is used to find available shells in your system.
+
+9. 
+To create shortcut “link” command use.
+
+There are two types of link:
+
+Hard link
+Soft link
+10. 
+Deleting the original file does not affect the hard link but Deleting the original file makes the soft link inactive.
+
+11. 
+For pass arguments in script “scriptname arg1 arg2 arg3 …” 
+
+For access arguments in script can be accessed inside the script as “$1 , $2 .. $n”
+
+12. 
+It represents the total number of arguments passed by string.
+
+13.
+$* consider the entire set of positional parameters as a single string, but $@ treat each quoted argument as a separate argument.
+
+14.  
+“s” bit also called “set user id”(SUID) bit. “s” on file causes the process to have the privileges of the owner of the file during the instance of the program.
+
+15. 
+System defined variable: System defined variable created by os itself. These variables are generally defined in capital letters. It can be viewed by the “set” command.
+
+User defined variable: It created by system users. Value of variable can be view by using “echo $variablename” command.
+
+16. 
+= is used for assigning value to a variable.
+
+== is used for string comparison.
+
+17. 
+The pipe operator is used for one by one execution of command but commands should not be dependent on each other.
+
+18. 
+Command mode: this is a mode where you start
+
+Edit mode: This mode allows you to do next editing.
+
+Ex mode: In this mode you interact with vi with instruction to process
+
+19. 
+Redirection is the process of direction data from one output to another.
+
+20. 
+Ps ux command user for find status of process.
+
+21. 
+Free command is useful for checking memory status.
+
+22. 
+To debug a shell script we execute the script with the “-x” or “-nv”  option.
+
+23. 
+To compare the string “test” command is used.
+
+24. 
+$! Shows process id of the process that recently went into background 
+
+$$  gives the process id of the currently executing process
+
+25. 
+“finger” command shows all information of users.
+
+26. 
+Boot block: It contains a small program called MBR which loads the kernel during system boot up.
+
+Super block: Super block contains all information about the file system.
+
+Inode block: It contains inode for every file of the file system.
+
+27. 
+Crontab stands for cron table because it uses the job scheduler cron to execute tasks. The crontab is a list of commands that you want to run on a regular schedule, and also the name of the command used to manage that list. 
+
+28. 
+The five fields contain information on when to execute the command.
+
+minute(0-59)
+hour(0-23)
+day(1-31) 
+month(1-12)
+day of the week(0-6, Sunday = 0).
+29. 
+cron.allow which decides the users need to be permitted for using the crontab command.
+
+cron.deny which decides the users need to be prevented from using the crontab command
+
+30. 
+df: It is used to check the free disk space.
+du: It is used to check the directory wise disk usage.
+dfspace: It is used to check the free disk space in terms of MB.
+31.  
+vi –R <Filename>
+32.  
+By using the command “uptime”.
+
+33. 
+We can use ssh to do this: 
+
+ssh username@serverIP -p sshport 
+Once the above command is executed, enter the password.
+
+34. 
+mysql –S serverName –U username –P password
+35.  
+umask 777
+36.  
+sed  '50i\ABCD' filename 
+37.  
+du -s /home/username 
+38.  
+/etc/shadow file has all the users listed. 
+
+awk –F ':' '{print $1}' /etc/shadow|uniq –u
+39. 
+#!/bin/sh
+echo "Hello, $LOGNAME"
+echo "Today's date is `date`"
+echo "Username is `who i am`"
+echo "Current directory is `pwd`"
+40. 
+#!/bin/sh
+if [ -d $mydir ]
+then
+echo "Directory exists"
+fi
+41. 
+r – read 4
+
+w – write 2
+
+e – execute 1
+
+42.  
+sed –n '10,$p' file1|sed '/MNO/s/ABC/DEF/'
+43.  
+tail +19 file1|head -1 
+44.  
+
+sed '1! G; h;$!d' file1
+45. 
+
+mkdir direc1
+chmod g+wx direc1
+chmod +t direc1
+46. 
+#!/bin/sh
+awk '{print $3}' $1
+47. 
+For Loop:
+
+for var in word1 word2 ... wordn
+do
+Statement(s) to be executed for every word.
+done
+While Loop:
+
+while command
+do
+Statement(s) to be executed if command is true
+Done
+Until Loop:
+
+until command
+do
+Statement(s) to be executed until command is true
+done
+48. 
+./script argument  used for passed argument to a script.
+
+Example:
+
+./script.sh  file.txt
+cat script.sh
+#!bin/bash
+Cat $1
+49. 
+In the script we use first argument as $1 and second argument as $2 
+
+Example: To move file one destination($1) to another($2)
+
+./move.sh file.txt /text
+cat move.sh
+#!/bin/bash
+mv $1 $2
+50. 
+awk ‘{print $5}’
+51. 
+“ps –p pid” command used to find the process name.
+
+52. 
+Alias name = ”command whose alias to be created”.
+
+53 . 
+C specifies whether the file is character special file or block special file.
+
+54. 
+awk ‘{print $5}’
+55. 
+Shebang line at the top of each script determines the location of the engine which is to be used in order to execute the script.
+
+56. 
+S1=”hello”
+S2=”world”
+Let s3=$s1+$s2
+Echo $s3
+57. 
+Int1=3
+Int2=2
+Int3=$int1+$int2
+Echo $int3
+58. 
+If [-f /var/www/html]
+Then 
+Echo “file exists”
+Fi
+59. 
+That line tells which shell to use. 
+
+60. 
+grep –c “ABC” filename
+61. 
+Output: variable 
+
+62. 
+echo ${!array[@]} used to print all array indexes.
+63. 
+Unset array[3]
+64. 
+#!/bin/bash
+X=10
+Y=20
+If [ $x –gt $y ]
+Then 
+Echo “ x is greater than y”
+Else 
+Echo “y is greater than x”
+Fi
+65. 
+Owner permissions: The permissions granted to a user with all the rights at the root level.
+
+Group permissions: The permissions granted to a user with all the rights in a particular group.
+
+Other  permissions: The permissions granted to a user with all the rights globally to a file.
+
+66. 
+#! /bin/bash
+# addition
+((sum=30+20))
+#print
+Echo$sum
+67. 
+#! /bin/bash
+: ‘
+This script calculates squares of 8.
+‘
+((square=8*8))
+echo $area
+68. 
+#! /bin/bash
+Echo  –n  “enter input:”
+read input
+echo “ you entered: $input”
+69. 
+#! /bin/bash
+Echo –n “enter number:”
+read number
+if  [[ ($number  –lt 10 )  && ($number%2  –eq  0)]]
+echo  “even number”
+else 
+echo “odd number”
+fi
+70. 
+#! /bin/bash
+Echo –n “enter any number : “
+read n
+if  [[ ( $n –eq 10 || $n  -eq 45) ]]
+then 
+echo “ you win”
+
+else  “ you lost!”
+fi
+example of elif 
+#! /bin/bash
+Echo –n “enter number :”
+read number 
+if  [[ $number  -gt 10]]
+then 
+echo “number  is greater than 10”
+elif  [[ $num –eq 10 ]]
+then 
+echo ‘number is equal to 10”
+else 
+echo “ number  is less than 10”
+fi
+71. 
+#! /bin/bash
+Sum=0
+For (( counter=1 ; counter<5 ;counter++))
+Do
+Echo –n “enter your number”
+read n
+(( sum+=n))
+#echo –n “$counter”
+Done 
+Printf   “\n”
+echo  “result is : $ sum”
+72. 
+#! /bin/bash 
+Function Add()
+{
+echo  –n “enter number:”
+read a
+echo  –n  “enter 2nd number :”
+read b
+echo “addition  is: $((  a+b ))”
+}
+Add
+73. 
+#! /bin/bash
+Recipientadmin@example.com
+Subject=”script”
+Message=”this mail send by script”
+‘mail –s $subject $recipient <<< $message’
+74. 
+#! /bin/bash
+year= ‘date +%Y’
+month=’date  +%m’
+day=’date +%d’
+hour=’date +% H’
+minute=’date +%M’
+second=’date +%S’
+echo ‘date’
+echo  “current date is :$day-$month=$year”
+echo  “current time is :$hour:$minute:$second”
+
+
+
+75.
+In shell scripting, $1 refers to the first argument or filename1, $2 refers to the second argument. 
+
+76.
+Shell scripting is extremely beneficial when it comes to reducing repetitive tasks that are time consuming and need to be executed by typing one line at a time. It can be used to automate the code compiling process, creating a program environment, running a program, and much more. 
+
+77.
+The -z flag parameter in bash is helpful to check whether the length of a variable is zero and returns true if it is zero. 
+
+78.
+No, Bash is a scripting language and does not support OOP. 
+
+
+
+
+Career growth 
+There are a lot of opportunities from many reputed companies in the world. According to research, Linux Shell Scripting has a market share of about 17. Since 2018, Linux has started to expand its market rapidly. According to PayScale, the average salary for shell scripting skill is $81,951. If you want career growth in DevOps, System administrator, learning shell scripting interview questions would be a great start.
+
+Daily use Examples of Shell Scripting by System Admins
+Monitoring your Linux system.
+Data backup and creating snapshots.
+Dumping Oracle or MySQL database for backup.
+Creating email based alert systems.
+Find out what processes are eating up your system resources.
+Find out available and free memory.
+Find out all logged in users and what they are doing.
+Find out if all necessary network services are running or not. For example if the web server failed then send an alert to the system administrator via a pager or an email.
+Find out all failed login attempts, if login attempts are continued repeatedly from the same network IP automatically block all those IPs accessing your network/service via firewall.
+User administration as per your own security policies.
+Find out information about local or remote servers.
+Server configuration.
+Shell Scripting FAQs
+When should shell programming scripting not be used?
+Shell programming scripting shouldn’t be used if a task is extremely complex, such as while writing a payroll processing system or when a high degree of productivity is required.

@@ -1,0 +1,856 @@
+1.Linux is an operating system, which is based on the Linux Kernel.  It is an open-source operating system that can be used with different hardware platforms. As it is an open-source OS, it provides a free and low-cost operating system for users. It is a user-friendly environment where they can easily modify and create variations in the source code.
+
+   
+
+2.Linus Torvalds created Linux. Linus Torvalds was a student at the University of Helsinki, Finland in 1991. He started writing code on his own to get the academic version of Unix for free. Later on, it became popular as Linux Kernel.
+
+3.Here is the difference between Linux and Unix - mentioned below
+
+              Linux
+                                                                                                Unix
+Both paid and free distributions are available.	                                Different paid structures for different levels of Unix.
+Linux primarily uses GUI with an optional command-line interface	        Unix uses the command-line interface
+Linux OS is portable and can be executed on different hard drives	        Unix OS is not portable.
+Linux is developed by a worldwide Linux community.	                        Unix is developed by AT&T developers.
+Linux is free. It is downloaded through the internet under GNU licenses.	Most Unix-like operating Systems are not free.
+Linux is used at home-based PCs, phones, etc.                           	Unix is used in server systems.
+
+5.The Root user is the superuser or administrator who has unrestricted access to all system resources and commands. Root privileges allow this user to execute administrative tasks, install software, modify system configurations, and manage user accounts. 
+
+4. Linux kernel is the heart of the operating system. It acts as a bridge between software and hardware. If Software requests the hardware, then the kernel delivers the data between software and hardware. In other words, the hardware and software components communicate with each other through the Kernal.
+
+5.Bash is a Unix shell and command processor written by Brian Fox for the GNU project. It is free software and acts as a replacement for Bourne Shell. It is an interpreted and not compiled process which can also be run in the terminal window. Bash is capable of reading commands from shell scripts.
+
+6.LILO means Linux Loader is a boot loader that is used for the Linux operating system. Most of the Linux Operating systems use LILO, to boot the operating system into the main memory to start the operations.
+
+7.The key feature of Linux is that it is open source, which allows users to access, modify, and distribute the source code freely. Also, it has a modular architecture, security features like user permissions and access controls,  networking support, and a command-line interface.
+
+
+
+8.
+Ans: The Latest version of Linux is the Linux Mint 21.3 "Virginia." It was released on January 12, 2024, as the LTS (Long Term Support) release. Linux Mint is one of the most popular distributions that provides the desktop computing experience. We can select the pre-installed software applications, including web browsers, office suites, multimedia players, and system utilities, due to which it is considered as user-friendly. 
+
+9. 
+Ans: Linux was one of the first open-source technologies, many programmers added software that completely open to the users, which means you can download the file and change the code as you like. It has a wide range of options for users and increased security.
+
+10. 
+Ans: Disadvantages of Open Source Operating System mentioned below
+
+Difficulty of use 
+Compatibility Issues
+Liabilities and warranties
+Hidden costs
+11. 
+Ans: Shell is a computer program that acts as an interface between the user and the kernel. Users can communicate with the kernel by writing programs, commands, and scripts on the shell. It accepts human-readable commands and converts them into kernel-understandable language.
+
+12.
+Ans: They are five Shells in Linux:
+
+C Shell (csh): It is like C syntax and provides spelling checking and job control.
+Korn Shell (ksh): This is a high-level programming language shell.
+Z Shell (Zsh): It provides some unique nature like it observes login/logout watching, file name generating, startup files, and closing comments. 
+Bourne Again Shell (bash): It is the default to Linux distributions.
+Friendly Interactive Shell (Fish): It provides web-based configuration,  auto-suggestions, etc. . 
+Explore a diverse array of Linux monitoring tools designed to optimize system performance and enhance operational efficiency, offering invaluable insights into system health and resource utilization.
+13. 
+Ans: Basic components of Linux
+
+Kernel: It is the core component of Linux, it acts as an interface between software and hardware.  
+Shell: It acts as an interface between the user and the Kernel.
+GUI: It stands for Graphic User Interface, which is another way for the user to interact with the system. But it is unlike images, buttons, and text boxes for interaction.
+System Utilities: These are the software functions that allow users to manage the computer.
+Application Programs: A set of functions designed to perform a set of tasks.
+14. 
+Ans:
+
+Launch your terminal by pressing CTRL+ALT+T or by giving terminal in the menu search bar.
+15. 
+Ans: Swap Space is used when the physical RAM memory is running out. It will move the RAM inactive pages to the swap space. It can be considered in the form of a dedicated swap partition or swap files.
+
+16.
+Ans: GUI means Graphical User Interface. It is a human-computer interface that uses windows, images, icons, and menus which can be manipulated by using a mouse. Most of the modern applications in electronic gadgets communicate with the user through GUI. GUI is a combination of graphical and textual interaction that uses buttons, menus, message boxes, etc.
+
+17. 
+Ans: Linux file permissions - Each file or directory has 3 permissions
+
+They are 
+
+Read: It refers to only they can read the file.
+Write: It refers that they can write the file or modify the file of a directory.
+Execute: It affects the user’s capability to execute the file or to view the file of a directory. 
+Explore the intricacies of Linux file permissions, gaining a comprehensive understanding of how they regulate access to files and directories within the operating system's filesystem.
+18. 
+Ans: In Linux, environmental variables are dynamic values that define the operating environment for processes and applications. They include system-wide settings such as PATH, HOME, and LANG, influencing how programs behave and interact with the system. These variables can be viewed, modified, and exported using commands like export and echo.
+
+19.  
+Ans: Symbolic links, also known as symlinks or soft links, are filesystem objects that act as pointers or references to other files or directories. Unlike hard links, which directly reference the inode of the target file, symbolic links store the path to the target file or directory. 
+
+Syntax: 
+
+ln -s <target> <link_name>
+
+For example, if you want to create a symbolic link named docs in your home directory that points to a directory named documents located in /mnt/data, you would use the following command:
+
+ln -s /mnt/data/documents ~/docs
+
+20. 
+Ans: Hard links are directory entries that directly point to the inode of a file or directory on a filesystem. They share the same inode as the target file. This means that changes to the original file are reflected in all hard links pointing to it, and vice versa. 
+
+Syntax:
+
+ln <target> <link_name>
+
+Suppose you have a file named file1.txt in your home directory and you want to create a hard link named file2.txt in the same directory that points to file1.txt, you would use the following command:
+
+ln ~/file1.txt ~/file2.txt
+
+21. 
+Ans: Redirection can be defined as changing the standard input and output devices. To redirect metacharacters are used, you can redirect the file or program. We can various types of redirection in Linux Like: 
+
+Standard Input (stdin) Redirection (<): Redirects input from a file to a command. You take data from a file and pour it into a command.
+Syntax: command < input.txt
+
+ 
+
+Standard Output (stdout) Redirection (>): Redirects output from a command to a file, overwriting existing content. It means that you take the output from a command and pour it into a file, replacing any existing content.
+Syntax: command > output.txt
+
+ 
+
+Appending Output (>>): Take data from the command to a file without removing the existing content. It just appends to existing content.
+Syntax: command >> output.txt
+
+Piping (|): Redirects output from one command as input to another command. Thus, You take the output from one command and connect it to the input of another command.
+Syntax: command1 | command2
+
+ 
+
+Standard Error (stderr) Redirection (2>): Redirects error messages from a command to a file. Using this, we can take error messages from a command and pour them into a file.
+Syntax: command 2> error.txt
+
+Combining stdout and stderr (&> or 2>&1): Redirects both standard output and error messages to a file. Thus, you can take the output and error message and put them into the file.
+Syntax: command &> output_and_error.txt or command > output_and_error.txt 2>&1
+22. 
+Ans: Daemons are background processes in Unix-like systems. They perform tasks independently of user interaction. Examples of the Daemons include sshd for secure remote access and cron for scheduled tasks. Thus, Daemons ensure system functionality and handle essential operations.
+
+Discover opportunities to enroll in a Linux certification course in Hyderabad, equipping yourself with valuable skills and expertise in one of the most sought-after operating systems in the industry.
+23.  
+Ans: The root is the user name, which by default has access to all files and commands. The root user can do many things, but an ordinary user cannot do things like installing software, changing file permissions, etc. To change the root user, you can use the command ‘sudo su ’ and enter the password as shown below: 
+
+24. 
+Ans: The root is the user name, which default has access to all files and commands. The root user can do many things, but an ordinary user cannot do like installing software, changing file permissions, etc.
+
+25. 
+Ans: Virtual Desktop is a user interface when you are facing the problem of how to manage multiple windows on your desktop, virtual desktop serves as an alternative. Virtual desktops store remote servers and allow you to use one or more programs on a clean slate. 
+
+26. 
+Ans: There are three kinds of modes in vi editors. They are 
+
+Command Mode/ Regular Mode: Use the command Esc to enter Command Mode from any other mode.
+Insertion Mode/Edit Mode: You have to press i to enter Insertion Mode from Command Mode.
+Ex Mode/ Replacement Mode: You have to press the “:” (colon) to enter Ex Mode from Command Mode.
+27. 
+Ans: The inode (index node) is a data structure that stores metadata about a file or directory, excluding its name and actual data content. On the other hand, the process ID (PID) is a unique numerical identifier assigned to each running process. 
+
+When a program is executed, the operating system assigns it a PID, which serves as a reference point for identifying and managing the process. To view the inode content of a file or directory in Linux, you can use the ls command with the -i option. 
+
+Syntax:
+
+ls -i <filename_or_directory>
+
+28. 
+Ans: Five process states in Linux. They are
+
+New/ Ready: A new process is created and ready to run.
+Running: The process is being executed.
+Blocked/ Wait: The process is waiting for input from the user. 
+Terminated/ Completed: The process completed the execution or terminated by the operating system. 
+Zombie: The process is deleted, but still the information regarding the process exists in the process table.
+Linux Process states
+
+29. 
+Ans: Process management system calls in Linux are a set of functions that enable the creation, termination, and manipulation of processes, as well as facilitate communication and synchronization between processes.
+
+fork(): Used to create a new process.
+exec(): Execute new process.
+wait(): wait until process execution.
+exit(): exit from the process.
+System calls to get the Process ID.
+getpid(): to find the unique process ID. 
+getppid(): to find the unique parent process id. 
+30. 
+Ans: The File Permissions define the access rights for different categories of users: the file owner, the group associated with the file, and others. There are three user-based permission groups for each file and directory. They are:
+
+Owner: Owners only will have to access the file or directory, they will not impact the actions of other users.
+Group: These permissions apply only to the group that has been assigned to the file or directory. They will not impact the actions of other users.
+All Users: These permissions are applied to all users on the system.
+Gain a deeper understanding of the Linux operating system with comprehensive educational resources that delve into its architecture, functionality, and versatility.
+31. 
+Ans: Linux file system stores and handles the data. Without a file system, it cannot know where the file starts from and where the file ends. In simpler words, the file system in Linux defines how data is organized and accessed, including the hierarchy of directories, file naming conventions, permissions, and metadata associated with each file and directory.  
+
+32. 
+Ans: The different types of file systems in Linux are:
+
+ext4: It manages files with improved performance and reliability.
+XFS: It scales for large storage systems with high throughput.
+Btrfs: It provides features like snapshots and RAID support.
+FAT32: It facilitates compatibility with various operating systems and devices.
+NTFS: It allows accessing files in dual-boot setups or external drives.
+ZFS: It offers advanced functionalities such as data compression and deduplication.
+
+
+33. 
+Ans: LVM stands for Large Volume Management, it is a storage management device. Users can create, resize, and delete LVM partitions. It increases abstraction, flexibility, and control. LVM is used to gather existing storage devices into the group and allocate logical units. 
+
+34. 
+Ans: The purpose of the screen command in Linux is to create and manage multiple terminal sessions within a single terminal window or SSH session. It allows users to create "screens" or virtual terminal windows that can run independently of each other, even if the original terminal session is disconnected.
+
+35. 
+Ans: unmask stands for user file creation mode. When the user creates any file, it has default file permissions. So unmask will specify a few restrictions to the newly created file (it controls the file permissions). To implement umask, you have to use the command 
+
+umask [-S] [mask]
+For example, to set the umask to 022, which removes write permissions for group and others, we can use the following commands: 
+
+umask 026
+
+36.  
+Ans: If the unmask command invoked without any arguments, it means it will display the current mask. 
+
+To set the unmask permanently, we have two types.
+
+They are:
+
+Ocotal representation.
+Symbolic representation.
+37. 
+Ans: Network Bonding is a process of combining more than two network interfaces to form a single network interface. It offers performance improvement and redundancy by increasing network throughput and bandwidth.
+
+38.
+Ans: Different modes of Linux network bonding
+
+Mode-0(balance-rr): It is a default mode and is based on the Round-Robin policy. It offers fault tolerance and load-balancing features. It used a round-robin fashion to transmit the packets.
+Mode-1(active-backup): It is based on the Active Backup policy and only one slave will act in the band and another one will act when the others fail in the band. It also provides fault tolerance.
+Mode-2(balance-xor): It sets an xor mode between the source Mac address and the destination Mac address to provide fault tolerance.
+Mode-3(broadcast): It is based on broadcast policy and transmits everything in the slave interface. It also provides fault tolerance and can be used only for a particular purpose.
+Mode-4(802.3ad): It is a dynamic aggregation mode, it creates aggregation groups having the same speed. It uses the transmit hashing method to select the slaves for outgoing traffic.
+Mode-5 (balance-tlb): The outgoing traffic depends on the current load on the slave, and the incoming traffic is received by the slave. It is called an adaptive transmit load balancing mode. 
+Mode-6(balance-alb): It is an adaptive load-balancing mode. It does not require any switch support.  
+39. 
+Ans: To display the default route and routing table, we use the following commands.
+
+$ route-n
+
+$ nestat-rn
+
+$ ip 
+40. 
+Ans: Here are several commands using which we can check on the open ports in the Linux Server. They are: 
+
+netstat --listen: Displays all listening sockets for TCP and UDP protocols.
+netstat -tuln: Displays listening TCP and UDP sockets with numerical addresses.
+netstat -lt: Displays listening TCP sockets with numerical addresses.
+netstat -vatn: Displays all active TCP and UDP connections, including listening sockets, with verbose output and numerical addresses.
+41. 
+Ans: The location of the directory that stores the kernel modules is “lib/modules/kernel-version/” It stores all the information about the compiled drives under the Linux system. Using the ‘lsmod’ command also we can see the installed kernel modules
+
+42. 
+Ans: The init is a traditional initialization system used in older Unix-like systems, executing startup scripts sequentially. An example command to restart a service using init is "service <service_name> restart". 
+
+On the other hand,  systemd is a modern initialization system designed for faster boot times and advanced service management. An example command to restart a service using systemd is "systemctl restart <service_name>".
+
+We should use the init for simple environments and systemd for the parallel startup and dependency management in modern Linux distributions.
+
+43. 
+Ans: The role of a Linux firewall is to monitor and control incoming and outgoing network traffic based on predefined security rules. It acts as a barrier between the internal network and external networks, such as the Internet, to protect against unauthorized access, malware, and other security threats. 
+
+We have to follow the below steps for its configuration: 
+
+Select a firewall like the iptables or ufw. 
+Install the firewall whatever you have chosen for your system like the iptables or firewalld package.
+Define firewall rules to allow or deny traffic.
+Apply rules to the firewall. 
+Save the configuration rules to persist across reboots.
+Verify firewall configuration using appropriate commands.
+44. 
+Ans: To change the default run level in Linux use the init command. 
+
+45. 
+Ans: To share a directory using NFS, first edit the configuration file and ‘/etc/exports’ and add an entry like directory name ‘/<directory-name>’. Now restart the NFS service.
+
+46. 
+Ans: Details mentioned below
+
+Service
+Port
+SMTP
+25
+DNS
+53
+FTP
+20(Data Transfer) 21(Connections Established)
+DHCP
+68(dhcp client), 67(DHCP server)
+SSH
+22
+Squid
+3128
+47. 
+Ans: Locking user accounts is done for security purposes so that unauthorized users cannot log in. So, we have a few ways to lock the user account. Some of them are below
+
+Lock or disable the password using passwd command.
+Expire the user account using usermod command or chage command.
+Changing the shell using nologin command ( /sbin/nologin ).
+
+
+Linux Commands Interview Questions
+48. 
+Ans: It is one of the basic commands in Linux. It is used to list all the files and directories in the file system.zom
+
+Syntax: 
+
+ls [OPTIONS] [FILES]
+We can use it without passing the arguments, then it will list all the files in the current working directory. Files will be displayed in alphabetical order. 
+
+Is
+To list the specific directory files use the directory name in the syntax, follow as shown in the below syntax.
+
+ls /etc
+
+We can also pass multiple directories names in the syntax, but separated by space. 
+
+ls /etc /var /etc/passwd
+51. What is the tail command in Linux?
+Ans: The Tail command print the last N number of lines of the given data, it prints 10 lines by default. 
+
+Syntax: 
+
+tail [OPTION]... [FILE]
+Example: 
+
+$ cat names.txt
+Tableau
+sql server
+linux administration
+Now, check the syntax without giving any option or input.
+$ tail state.txt
+49. 
+Ans: The grep searches file patterns. If you are looking for a specific pattern in the output of another command, grep highlights the relevant lines. Use this grep command for searching log files, specific processes, and more
+
+Syntax:
+
+grep [options] pattern [files]
+For example, to search for the specified "pattern" within the file "filename.txt" and display all lines containing that pattern, you can use the following command. 
+
+grep "pattern" filename.txt
+
+50. 
+Ans: The ps command displays the current process status of the system. And it displays the process id’s with some other related data also
+
+Syntax: 
+
+Ps [options]
+
+Output:
+
+[root@rhe17~]# ps
+
+PID TTY    TIME CMD
+
+12330 pts/0  00:00:00 bash
+
+21621 pts/0  00:00:00 ps
+
+Example: This command displays a detailed list of all processes running on the system, including user, PID, %CPU, %MEM, and command. 
+
+ps -aux
+
+Explore a comprehensive collection of Linux commands with practical examples, enabling you to deepen your understanding and proficiency in navigating and managing the Linux operating system efficiently.
+51. 
+Ans: env is a shell command is used to print a list of current environmental variables and it can run another process in another environment without any modification of the current environment. 
+
+env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]
+Example: The ‘env’ command will print all the environment variables currently set in the shell.
+
+Options
+
+Tag
+Description
+-i, --ignore-environment
+Start with an empty environment.
+-0, --null
+output line End with a 0 (null) byte rather than a newline.
+-u, --unset=NAME
+removes variable NAME from the environment
+--help
+Display a help message and exit.
+52. 
+Ans: The top command is used to show the system process and it displays and updates the sorted process information. 
+
+Syntax: 
+
+top [options]
+
+Example: 
+
+top -n 1
+Here, the ‘-n 1’ option specifies that the top should only run once and then exit, displaying system information once.
+
+53. 
+Ans: The netstat command gives various information about the network and routing tables, interface statics, and more about the system.
+
+Syntax:
+
+netstat [options] 
+
+Example: 
+
+The ‘netstat -tuln’ command will display all listening TCP and UDP sockets along with their respective numerical addresses and port numbers. 
+
+54. 
+Ans: lsof means List of files, we can know which file is opened by which process.
+
+lsof [options]
+Example:
+
+The below command lists all open files and network connections, including those associated with port 80.
+lsof -i :80
+
+55. 
+Ans:  This command is used to change the permission of files and directories. Therefore, on the whole, there are three types of permission, read, write, and execute, and are represented by numbers as shown below.
+
+4 - read permission
+2 - write permission
+1- execute permission
+syntax:
+
+$ chmod options permissions file name  
+
+$ chmod [OPTION]... MODE[,MODE]... FILE...
+
+$ chmod [OPTION]... OCTAL-MODE FILE...
+
+$ chmod [OPTION]... --reference=RFILE FILE…
+For example, to give read and write permissions to the owner of a file named "example.txt" while allowing only read permission to the group and others, you would use the following command:
+chmod 644 example.txt
+
+Here, the first digit (6) represents the permissions for the file owner (read + write = 4 + 2).
+
+The second and third digits (4) represent the permissions for the group and others. Thus, both are set to read-only.
+
+56. 
+Ans: Chown command: The command “chown” stands for change file owner and Group. This command is used to change the ownership of one or more files or folders for a specified user or group. 
+
+syntax:
+
+$ chown [OPTION]… [OWNER][:[GROUP]] FILE…
+                                Or
+
+  $ chown [OPTION]… –reference=RFILE FILE…
+Suppose you want to change the ownership of a file named "example.txt" to a user named "john" and a group named "users", you would use the following command:
+chown john:users example.txt
+
+57. 
+Ans: The cp command is used to copy files and directories. It is also used to backup files or directories.
+
+Syntax:
+
+$ cp filename
+
+Example: The command “cp file1.txt file2.txt” copies the contents of file1.txt into file2.txt, creating file2.txt if it does not exist, or overwriting it if it does.
+
+58. 
+Ans: rm command: The rm command is used to remove the directory or file specified on the command line. You need to be careful while removing any file or directory.
+
+Syntax:
+
+rm filename--- 
+
+Command
+Description
+rm filename
+Removes single file.
+rm filename1, filename2, filename 3
+Removes multiple files.
+ rm * .pdf
+Removes all pdf files in the current directory. 
+ rm -i filename(s)
+-i mean to confirm before deleting the file
+ rm -f filename(s)
+Removes files without prompting
+rm -fv *.txt
+Remove all .txt files in the current directory without prompting
+59. 
+Ans: mkdir, command allows users to create directories in Linux. Users can create multiple directories at once and can set the permissions to the directories.
+
+Syntax: 
+
+mkdir [options...] [directories ...]
+Option
+Description
+Directory
+name of the directory to be created
+-m=mode, --mode=mode
+to set a file mode (permissions, etc.) for the created directories
+-p, --parents
+create parent directories
+--v, --verbose
+Verbose output. Print a message for the created directory.
+--Z= context, --context=context
+If you are using SELinux, this option sets the security context of each created directory to context.
+--help
+shows help message and exit
+--version
+It shows version information and exit
+60. 
+Ans: The rmdir command in Linux is used to remove empty directories from the filesystem.
+
+Syntax: 
+
+rmdir [-p] [-v | –verbose] [–ignore-fail-on-non-empty] directories
+Where: 
+
+-p: Remove the specified directory and its parent directories if they are empty.
+-v, --verbose: Display a message for each directory removed.
+--ignore-fail-on-non-empty: Do not display an error message if a directory is non-empty.
+Example: 
+
+rmdir -p -v --ignore-fail-on-non-empty mydirectory
+
+The above command removes the specified directory named "mydirectory" and its parent directories if they are empty. It displays a message for each directory removed and ignores any error messages if a directory is non-empty.
+
+61. 
+Ans: We can use two commands to exit from the vi editor. They are
+
+Wq: wq command saves the current work and exits from the vi editor.
+q!: q! The command does not save the current work, but it exits from the vi editor.
+62.  
+Ans: The following commands are used to delete information from a file in vi editors.
+
+Command x: Deletes the current character. For example, to delete the character under the cursor, simply press "x".
+Command dd: Deletes the current line. For example, to delete the entire current line, type "dd".
+63. 
+Ans: File content commands
+
+head: Display top lines of the file.
+tail: Display the last lines of the file.
+cat: Concatenate more than 2 files.
+more: Displays the content in pager form to view in the terminal. 
+Linux Technical Interview Questions and Answers for Experienced
+64. 
+Ans: We have three types of Linux Distributions namely: 
+
+Desktop Linux: Designed for personal computers with GUIs and a wide range of applications.
+Embedded Linux: Customized for resource-constrained embedded systems like IoT devices.
+Server Linux: Optimized for stability, reliability, and performance in server environments.
+If we talk about the Linux Distributions, the most popular ones are: 
+
+Linux Mint: It is stable and robust. Linux Mint uses mate desktop and cinnamon. 
+Debian: It stands for robustness, stability, and a well-oiled release cycle. It is user-friendly. Debian version 8 will be replaced by version 9.
+Ubuntu: It is available for both desktop and server editions and is based on Debian.  
+openSUSE: It is a good choice for new users and existing users.
+Manjaro: It gives a pleasant experience for new and experienced users
+65.  
+Ans: We are many reasons, in that few important reasons are listed out. Following are
+
+High Stability: It is very stable and does not lead to crashes, it runs fastly as it is when it installed first. 
+Security: It is a dependable server, that offers high security to the user. Using Linux on your system it is easy to avoid viruses and malware. The attacker cannot change any changes in the system until the user logged in as the root user.
+Easy to Operate: Linux is easy to operate and we can install it easily onto the system because all the variants of Linux have their own software repositories. You can update the system periodically with just a few clicks or you can set automatic updation.
+Hardware Compatibility: Linux can use on any hardware, it doesn’t have any hardware restrictions. It uses efficiently all system resources.
+Open Source: The source code is available as it is under Free and Open Source Software(FOSS).
+uses for linux operating system
+
+66. 
+Ans: Following are the features of the Linux Operating System
+
+Portable: Software can work on different types of hardware in the same way. It can carry easily in pen drives and memory cards.
+Open Source: Source code available for free, and its community-based development project. 
+Multi-User: Multiple users can use ram, applications and run programs at the same time. 
+Multiprogramming: Multiple programs or applications can run at the same time. 
+Shell: It has a special interpreter program where you can execute programs and commands of the system. 
+Security: It provides authentication, authorization, and encryption to provide security to the data. 
+67.  
+Ans: Difference between Bash and Dos
+
+Bash	Dos
+Commands are case sensitive	Commands are not case-sensitive
+Backward slash(/) represents directories separator	‘/’ represents command arguments
+Forward slash ‘’ represents the escape character	‘’ represents directories separator
+Does not follow conventions naming in files  	Follow naming convention in files
+68. 
+Ans: Internal Commands are the Commands directly run by the shell known as internal commands and there is no separate process to run the commands. Examples include cd, echo, pwd, and history.
+
+On the other hand, the External Commands are the Commands which are run by the kernel and are known as external commands and every single command has its unique process id. ls, grep, cat, and rm.
+
+Linux Networking Interview Questions
+69. 
+Ans: It is a form of redirection that is used in Linux, it is used to combine more than two commands and the output of one command can take as input to the next command. 
+
+Syntax:
+
+command_1 | command_2 | command_3 | .... | command_N
+Example: 
+
+ls | grep example
+
+This command first executes ls to list all files and directories in the current directory, and then pipes the output to grep, which filters the output to display only the lines containing the word "example".
+
+70. 
+Ans: Communication between a parent process and its child process in Linux can be achieved through various inter-process communication (IPC) mechanisms. These mechanisms allow processes to exchange data, synchronize their actions, and coordinate their execution. The types of IPC mechanism in Linux are:
+
+Pipes: Allow communication by connecting the output of one process to the input of another.
+Sockets: Enable communication between processes over a network.
+Message Queues: Facilitate asynchronous message passing between processes.
+Shared Memory: Allows multiple processes to access the same memory region concurrently.
+Signals: Software interrupts used to notify processes of events or conditions.
+71. 
+Ans: It is a centralized server that does not have any exists states on the working station. It may have scenarios when a state of a particular system takes a snapshot then, the user wants all other machines to be in that particular state.
+
+72. 
+Ans: Features of Stateless Linux Server
+
+Stores the prototype of every system.
+Stores the snapshot was taken. 
+Stores the home directories.
+Uses LDAP, which contains the information about which snapshot should run on which system. 
+73. 
+Ans: It is a process whose execution is completed but even the information exists in the process table. It occurs for the child process because the parent process needs to read the child process status. Once it is completed using the wait system call, then the zombie process is removed from the process table.
+
+74. 
+Ans: In Linux, the Ctrl+Alt+Del key is used to restart the computer, and it does not display any confirmation message before rebooting the system. 
+
+Discover reputable institutions offering top-notch Linux training in Bangalore, providing aspiring professionals with the knowledge and skills essential for success in the tech industry.
+75. 
+Ans: Linux is an open-source operating system, nowadays it is rapidly growing in the technology market. We have a few reasons why Linux is more secure than other OS.
+
+The perk of accounts: Linux allows only a few users to access the system. Thus, the virus cannot attack the whole system, it may cause only a few files in the system. 
+Strong Community: Linux users first accomplished the files before they open. So they can save their systems from vulnerabilities. 
+Iptables: Iptables are used by the Linux because it checks the security circle of the system. 
+Different Working Environment: Linux system has different working environments like Linux Mint, Debian, Arch, and many more, these working environments protect from the virus.
+Recording in Linux: It maintains log history because later it can view the details of the system files easily. 
+Few User: Linux users are less compared to others, due to this security will be more.
+76. 
+Ans: The tail command displays the last part of a file. Generally, users don't need every logline to troubleshoot. Instead, you want to check what your logs say about the most recent request to your application.
+
+tail Example:
+
+$ tail -n 100 /var/log/httpd/access_log
+
+77. 
+Ans: In Linux cat command concatenates and prints files. Users might issue cat to check the contents of your dependencies file or to confirm the version of the application that you have already built locally.
+
+cat Example:
+
+$ cat requirements.txt
+flask
+flask_pymongo
+78. 
+Ans: grep searches file patterns. If you are looking for a specific pattern in the output of another command, grep highlights the relevant lines. Use this grep command for searching log files, specific processes, and more.
+
+grep Example: 
+
+$ cat tomcat.log | grep org.apache.catalina.startup.Catalina.start
+12-Jan-2018 17:08:35.542 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 681 ms
+79. 
+Ans: ps command displays process status. Use this ps command to determine a running application or confirm an expected process.
+
+ps Command Example:
+
+$ ps -ef
+
+$ ps -ef | grep tomcat
+80. 
+Ans: env command allows users to set or print the environment variables. During troubleshooting, users can find it useful for checking if the wrong environment variable prevents your application from starting.
+
+env Command Example:
+
+$ env
+PYTHON_PIP_VERSION=9.0.1
+HOME=/root
+DB_NAME=test
+PATH=/usr/local/bin:/usr/local/sbin
+LANG=C.UTF-8
+PYTHON_VERSION=3.4.6
+PWD=/
+DB_URI=mongodb://database:27017/test
+81. 
+Ans: top command displays and updates sorted process information. Use this top command to determine which processes are running and how much memory and CPU they are consuming.
+
+82. 
+Ans: netstat command in Linux shows the network status. This netstat command shows network ports in use and their incoming connections.
+
+83. 
+Ans: ls of command lists the open files associated with your application.
+
+84. 
+Ans: Users can use the df command to troubleshoot disk space issues. Here df stands for display free disk space.
+
+Syntax:
+
+df [options] [file|directory]
+
+df Command Example:
+
+df -h
+
+Here, the -h option is used to display the output in a human-readable format like kilobytes (K), megabytes (M), gigabytes (G), etc. 
+
+85. 
+Ans: The du command in Linux is used to retrieve more detailed information about which files use the disk space in a directory. 
+
+Syntax:
+
+du [options] [file|directory]
+
+du Command Example:
+
+$ du -sh /var/log/*
+1.8M  /var/log/anaconda
+384K  /var/log/audit
+4.0K  /var/log/boot.log
+0 /var/log/chrony
+4.0K  /var/log/cron
+4.0K  /var/log/maillog
+64K /var/log/messages
+Here, the -s displays only a summary of total disk usage for each specified directory, and the -h: Displays output in a human-readable format (e.g., kilobytes, megabytes, gigabytes).
+
+86. 
+Ans: iptables command blocks or allow traffic on a Linux host, similar to a network firewall. This iptables command may prevent certain applications from receiving or transmitting requests
+
+Syntax:
+
+iptables [options] [chain] [rule]
+
+The following options are available for the iptables: 
+
+-A: Append a rule to a chain.
+-D: Delete a rule from a chain.
+-P: Set the default policy for a chain.
+-I: Insert a rule into a chain at a specific position.
+For example, the following command adds a rule to the INPUT chain to drop all incoming traffic from the IP range 192.168.1.0/24.
+
+iptables -A INPUT -s 192.168.1.0/24 -j DROP
+
+87. 
+Ans:
+
+Linux	Windows
+Linux is available for FREE	It is paid software
+It is an Open-Source operating system	It is not an open-source OS
+Linux customization is possible	No customizations are available
+It provides high-level security	Can't defend against virus and malware attacks unless it is paid
+Primary partitioning and logical partitioning available for boot	Booting is available while primary partitioning only
+BackSlash separates directories	The forward slash separates directories
+File names are case-particular	Irrespective of the case while naming files
+ 
+88. 
+Ans: cd- command go to the previous directory.
+
+89. 
+Ans: Go to $HOME directory
+
+90. 
+Ans: The command (cd /var/log && ls -l) changes the directory to /var/log, lists the contents of the directory using ls -l, and then returns to the original directory
+
+Example:
+
+(cd /var/log && ls -l)
+
+In this example, the command first changes the directory to /var/log, lists the contents of the directory using ls -l, and then returns to the original directory (/home/user).
+
+91. 
+Ans: The pushd command in Linux puts the current directory on the directory stack, allowing you to navigate between directories efficiently.
+
+Syntax: 
+
+pushd [directory]
+
+Example: 
+
+pushd /var/log
+
+92. 
+Ans: The ls -lSr command in Linux is used to list files and directories in the current directory in long format (detailed listing) sorted by size in descending order (largest size first). 
+
+ls: Command to list directory contents.
+-l: Option to use long listing format.
+-S: Option to sort files by size.
+-r: Option to reverse the sort order, making it descending (largest size first).
+93. 
+Ans: This command is used to display the top disk space users in the current directory. Let us understand it's working in the following way: 
+
+du -s *: Command to calculate the disk usage (in kilobytes) of each file and directory in the current directory.
+sort -k1,1rn: Command to sort the output based on the first column (disk usage) in reverse numerical order.
+head: Command to display only the first few lines of the sorted output, which represent the top disk space consumers.
+94. 
+Ans: This command sort path by easy to interpret disk usage.
+
+95. 
+Ans: This command shows free space on mounted file systems. The df -h command in Linux is used to display free space on mounted file systems in a human-readable format. It provides information about the total disk space, used space, available space, and usage percentage for each mounted file system.
+
+96. 
+Ans: The df -T command in Linux is used to display information about disk space usage in the system along with the filesystem type for each mounted filesystem
+
+97. 
+Ans: The fdisk -l command in Linux is used to display the sizes and types of disk partitions on the system. It lists information about all available disk partitions, including their sizes, types, and start and end sectors. This command must be run as root (sudo fdisk -l) to display partition information.
+
+98. 
+Ans: To kill a program using a specific port in Linux, you can use the fuser command with the -k option followed by the port number and protocol (TCP or UDP). For example, to kill a program using port 8000, you would use: 
+
+sudo fuser -k 8000/tcp
+
+99. 
+Ans: The ulimit command allows us to limit memory usage for commands in Linux. By setting the virtual memory size (in kilobytes), you can restrict the memory usage of a command. 
+
+Syntax: 
+
+ulimit -Sv [memory_limit]
+
+Example: 
+
+ulimit -Sv 1000
+
+This command limits the memory to 1000 KBs (1 MB)
+
+ 
+100. 
+Ans: You can use the following commands to get the full path:
+
+The realpath command gives the absolute path of a file or directory.
+realpath [file_path]
+The readlink command with the -f option also gives the absolute path of a file or directory. 
+Syntax:
+readlink -f [file_path]
+101. 
+Ans: We can use the below commands to view and extract single file for tar file
+
+tar tf file.tgz
+tar xf file.tgz filename
+102. 
+Ans: To find out who is currently logged in to the system, you can use the w command which displays the users as shown below:
+
+103. 
+Ans: It is useful to detect permissions errors, for example when configuring a web server. So, to check the permissions of each directory leading to a file, you can use the namei command with the -l option followed by the path to the file.
+
+namei -l /path/to/file.txt
+104. 
+Ans: To run a command every time a file is modified, you can use a combination of the inotifywait command and a loop.
+
+Example: 
+
+while inotifywait -e close_write document.tex
+do
+make
+done
+105. 
+Ans: we can use the command ‘cat file.txt | xclip -selection clipboard’ to copy the text to the clipboard. 
+
+106. 
+Ans: This is an important Linux Interview Question to test your understanding of the Linux Development Environment. We can use the command /usr/bin/time -v ls to check the resource usage in the Linux File System. 
+
+107. 
+Ans: To run a command for a limited time, you can use the timeout command followed by the duration and the command you want to run. An example of this command is given below
+
+timeout 10s ./script.sh
+108. 
+Ans: Use this command: comm file1 file2.
+

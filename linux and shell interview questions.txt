@@ -1,0 +1,85 @@
+What is interactive and non-interactive shell?
+What is the absolute and relative path?
+How to create, read and delete files?
+How to create and delete a directory?
+How to create multiple text files and directories?
+What is the use of head and tail command?
+How to find the current shell which you are using?
+How to find an available shell in your system?
+How to create shortcuts in Linux?
+Tell me the difference between hard link and soft link?
+How will you pass and access arguments to a script in Linux?
+What is the significance of $#?
+What is the difference between $* and $@?
+Explain “s” permission bit in a file?
+What are the different types of variables used in Shell Script?
+What is the difference between = and ==?
+What is the use of a pipe operator? How to execute multiple commands in one line?
+What are the different modes of vi editors?
+What is redirection?
+How to find the status of the process?
+How to check memory status?
+How to debug a shell script?
+Which command is used for comparing the string in the shell script?
+What is the difference between $! and $$?
+Which command is used to find all information of the user?
+Which four fundamental components of every file system?
+What is the Crontab?
+How many fields are present in a crontab file?
+What are the two files of crontab command?
+What are the different commands available to check the disk usage?
+How to open a read-only file in the Shell?
+How to find out how long the system has been running?
+How to connect to a remote server and execute some commands?
+How to connect to a database server from Linux?
+How can I set the default permission to all users on every file which is created in the current shell?
+How will I insert a line “ABCD” at every 50th line of a file?
+How to find the total disk space used by a specific user?
+How to print the login names of all users on a system?
+Write a shell script to get current date, time, username and current working directory.
+How to check if a directory exists?
+Explain the file permissions.
+Given a file, replace all occurrence of word “ABC” with “DEF” from 10th line till end in only those lines that contains word “MNO”
+How will you find the 19th line of a file using only tail and head command?
+How to Use the sed command to replace the content of the file?
+if cat fille
+ABCD
+EFGH
+Then O/p should be 
+EFGH
+ABCD
+I want to create a directory such that anyone in the group can create a file and access any person’s file in it but none should be able to delete a file other than the one created by himself. 
+We can create the directory giving read and execute access to everyone in the group and setting its sticky bit “t” on as follows: 
+How to get the 3rd element/column from each line from a file?
+Write down the Syntax for all the loops in Shell Scripting.
+How to pass arguments to a script?
+How to use arguments in the script?
+How to get 5rd element from each line from the file?
+how to find process name from process ID?
+How to create alias command in shell?
+What is the c and b permission field of the file?
+How to get 5rd element from each line from the file?
+What is the use of a shebang line?
+How to add two strings?
+How to add two integers?
+Write a script to check if a file exists on the system?
+Why #!/bin/sh or #!/bin/bash at the beginning of every script?
+From given file name find the count of lines containing word  “ABC”
+What would be the output of command: echo ${new:-variable}
+How to print all array indexes?
+How to remove elements from an array with id 3?
+Write a script to compare numbers?
+What are the types of permission at the file level in Shell?
+How  to use comments in shell scripting?
+How to use multi-line comments in shell scripting?
+Write a script that receive input from user.
+Write a script using the AND operator.
+Write an example of OR operator.
+Write a script for adding multiple values.
+Write an example of a function.
+How to send mail using shell script?
+Write script to print current date and time.
+What is $1 and $2 in shell script?
+What is the importance of shell scripting?
+What is Z in bash?
+Is bash a OOP?
